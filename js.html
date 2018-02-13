@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modifying image src attribute</title>
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<p>Wonderful script</p>
+	
+		
+	<img src="/uploaded/11.56.52-ac56aaef62fe6d932738f018b60f0ef8.jpeg" alt="image">
+   
+
+
+
+<script type="text/javascript">
+	var images = document.getElementsByTagName('img');
+  const baseUrl = "https://outlined.co"
+ Array.from(images).forEach(function(ele){
+  ele.src = baseUrl + ele.getAttribute("src");
+});
+	
+
+</script>
+</body>
+</html>
